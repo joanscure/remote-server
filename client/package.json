@@ -1,0 +1,33 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "application test",
+  "author": "rnicrosoft",
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.jdev-control.server",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    }
+  },
+  "devDependencies": {
+    "@electron/fuses": "^1.8.0",
+    "@electron/rebuild": "^4.0.2",
+    "electron": "^39.2.6",
+    "electron-builder": "^26.0.12",
+    "electron-rebuild": "^3.2.9"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1",
+    "firebase": "^12.6.0",
+    "uiohook-napi": "^1.5.4",
+    "uuid": "^13.0.0"
+  }
+}
